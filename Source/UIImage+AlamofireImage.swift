@@ -106,7 +106,7 @@ extension UIImage {
         guard !af_inflated else { return }
 
         af_inflated = true
-        CGDataProviderCopyData(CGImageGetDataProvider(CGImage))
+//        CGDataProviderCopyData(CGImageGetDataProvider(CGImage))
     }
 }
 
