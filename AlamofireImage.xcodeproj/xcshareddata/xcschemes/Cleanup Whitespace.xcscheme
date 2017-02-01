@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C9043761AABBFC5001B4E60"
-               BuildableName = "AlamofireImage.framework"
-               BlueprintName = "AlamofireImage iOS"
-               ReferencedContainer = "container:AlamofireImage.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C9043811AABBFC5001B4E60"
-               BuildableName = "AlamofireImage iOS Tests.xctest"
-               BlueprintName = "AlamofireImage iOS Tests"
+               BlueprintIdentifier = "4CD589AB1D45B0F500ADEF90"
+               BuildableName = "Cleanup Whitespace"
+               BlueprintName = "Cleanup Whitespace"
                ReferencedContainer = "container:AlamofireImage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C9043811AABBFC5001B4E60"
-               BuildableName = "AlamofireImage iOS Tests.xctest"
-               BlueprintName = "AlamofireImage iOS Tests"
-               ReferencedContainer = "container:AlamofireImage.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C9043761AABBFC5001B4E60"
-            BuildableName = "AlamofireImage.framework"
-            BlueprintName = "AlamofireImage iOS"
-            ReferencedContainer = "container:AlamofireImage.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -78,19 +45,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C9043761AABBFC5001B4E60"
-            BuildableName = "AlamofireImage.framework"
-            BlueprintName = "AlamofireImage iOS"
+            BlueprintIdentifier = "4CD589AB1D45B0F500ADEF90"
+            BuildableName = "Cleanup Whitespace"
+            BlueprintName = "Cleanup Whitespace"
             ReferencedContainer = "container:AlamofireImage.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -103,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C9043761AABBFC5001B4E60"
-            BuildableName = "AlamofireImage.framework"
-            BlueprintName = "AlamofireImage iOS"
+            BlueprintIdentifier = "4CD589AB1D45B0F500ADEF90"
+            BuildableName = "Cleanup Whitespace"
+            BlueprintName = "Cleanup Whitespace"
             ReferencedContainer = "container:AlamofireImage.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
