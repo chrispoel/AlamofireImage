@@ -1,7 +1,7 @@
 //
 //  Gravatar.swift
 //
-//  Copyright (c) 2015-2017 Alamofire Software Foundation (http://alamofire.org/)
+//  Copyright (c) 2015-2018 Alamofire Software Foundation (http://alamofire.org/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -27,9 +27,9 @@ import UIKit
 
 private extension String  {
     var md5Hash: String {
-        let trimmedString = lowercased().trimmingCharacters(in: CharacterSet.whitespaces)
-        let utf8String = trimmedString.cString(using: String.Encoding.utf8)!
-        let stringLength = CC_LONG(trimmedString.lengthOfBytes(using: String.Encoding.utf8))
+        let trimmedString = lowercased().trimmingCharacters(in: .whitespaces)
+        let utf8String = trimmedString.cString(using: .utf8)!
+        let stringLength = CC_LONG(trimmedString.lengthOfBytes(using: .utf8))
         let digestLength = Int(CC_MD5_DIGEST_LENGTH)
         let result = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLength)
 
@@ -41,7 +41,7 @@ private extension String  {
             hash += String(format: "%02x", result[i])
         }
 
-        result.deallocate(capacity: digestLength)
+        result.deallocate()
 
         return String(format: hash)
     }
@@ -105,7 +105,9 @@ public struct Gravatar {
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
 
         var queryItems = [defaultImage.queryItem, rating.queryItem]
-        queryItems.append(URLQueryItem(name: "f", value: forceDefault ? "y" : "n"))
+        if forceDefault {
+            queryItems.append(URLQueryItem(name: "f", value: "y"))
+        }
         queryItems.append(URLQueryItem(name: "s", value: String(format: "%.0f",size * scale)))
 
         components.queryItems = queryItems

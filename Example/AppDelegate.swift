@@ -1,7 +1,7 @@
 //
 //  AppDelegate.swift
 //
-//  Copyright (c) 2015-2017 Alamofire Software Foundation (http://alamofire.org/)
+//  Copyright (c) 2015-2018 Alamofire Software Foundation (http://alamofire.org/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -28,14 +28,13 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    #if swift(>=4.2)
+    typealias OptionsKey = UIApplication.LaunchOptionsKey
+    #else
+    typealias OptionsKey = UIApplicationLaunchOptionsKey
+    #endif
 
-    // MARK: - Application State Methods
-
-    func application(
-        _ application: UIApplication,
-        willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?)
-        -> Bool
-    {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [OptionsKey : Any]? = nil) -> Bool {
         window = {
             let window = UIWindow(frame: UIScreen.main.bounds)
 
